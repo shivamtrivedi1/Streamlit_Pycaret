@@ -21,9 +21,9 @@ def run():
 
     from PIL import Image
     
-    image_hospital = Image.open('titanic.png')
+    #image_hospital = Image.open('titanic.png')
 
-    st.image(image,use_column_width=False)
+    #st.image(image,use_column_width=False)
 
     add_selectbox = st.sidebar.selectbox(
     "How would you like to predict?",
