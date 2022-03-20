@@ -50,7 +50,7 @@ def run():
 
         input_dict = {'age' : age, 'sex' : sex, 'pclass':pclass,'sib_sp':sib_sp,'parch':parch,'fare':fare,'embarked':embarked}
         input_df = pd.DataFrame([input_dict])
-
+        st.dataframe(input_df) 
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
             output = '$' + str(output)
